@@ -1,4 +1,4 @@
-const { Schema, model } = require("mongoose")
+const { Schema, model, Types } = require("mongoose")
 const dateFormat = require("../utils/dateFormat")
 
 // reaction schema only
@@ -31,13 +31,13 @@ const ReactionSchema = new Schema(
 )
 
 // thought model
-const ThoughtsSchema = new Schema(
+const ThoughtSchema = new Schema(
     {
         thoughtText: {
             type: String,
             required: true,
-            minlength: 1,
-            maxlength: 280,
+            minLength: 1,
+            maxLength: 280,
         },
         createdAt: {
             type: Date,
@@ -53,18 +53,15 @@ const ThoughtsSchema = new Schema(
     {
         toJSON: {
             virtuals: true,
-            getters: true,
+            getter: true,
         },
-        // prevents virtuals from creating duplicate of _id as `id`
-        id: false,
     }
 )
 
-// get total count of comments and replies on retrieval
-ThoughtsSchema.virtual("reactionCount").get(function () {
-    return this.reactions.length()
+ThoughtSchema.virtual("reactionCount").get(function () {
+    return this.reactions.length
 })
 
-const Thoughts = model("Thoughts", ThoughtsSchema)
+const Thought = model("Thought", ThoughtSchema)
 
-module.exports = Thoughts
+module.exports = Thought
