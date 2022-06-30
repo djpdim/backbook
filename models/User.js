@@ -1,9 +1,8 @@
 const { Schema, model } = require("mongoose")
-const ThoughtSchema = require("./Thoughts-model.js")
 
+// user model
 const UserSchema = new Schema(
     {
-        // set custom id to avoid confusion with parent comment _id
         username: {
             type: String,
             unique: true,
@@ -12,9 +11,9 @@ const UserSchema = new Schema(
         },
         email: {
             type: String,
-            required: true,
             unique: true,
-            match: [/.+@.+\..+/],
+            required: true,
+            match: [/.+\@.+\..+/],
         },
         thoughts: [
             {
@@ -38,7 +37,7 @@ const UserSchema = new Schema(
 )
 
 UserSchema.virtual("friendCount").get(function () {
-    return this.friends.length()
+    return this.friends.length
 })
 
 const User = model("User", UserSchema)
