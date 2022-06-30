@@ -14,7 +14,7 @@ const {
 // get all users and create new user
 router.route("/").get(getAllUsers).post(createUser)
 
-// get, update, and delete user
+// Get, update, and delete, user
 router.route("/:id").get(getSingleUser).put(updateSingleUser).delete(removeUser)
 
 // add and remove friends with user ID and friend ID
