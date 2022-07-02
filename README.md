@@ -9,11 +9,9 @@
 
 Link to the github app: [BackBook](https://github.com/djpdim/BackBook)
 
-Demo: [BackBook](https://drive.google.com/file/d/1tx24AZ8WGZhDRvfPEpqLJuHXLgaRwdDR/view)
+Demo: [BackBook](https://drive.google.com/file/d/1X3xwqA-pWKN0zgT526cNBz5nYm945aKK/view)
 
-<!-- <img src="./public/images/mctechhomepage.png" width="800" height="400" />
-
-![demogif](./public/images/mcTech.gif) -->
+![demogif](./public/assets/images/gif/backbook.gif)
 
 ## Tample of Content
 
