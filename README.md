@@ -9,9 +9,13 @@
 
 Link to the github app: [BackBook](https://github.com/djpdim/BackBook)
 
-Demo: [BackBook](https://drive.google.com/file/d/1X3xwqA-pWKN0zgT526cNBz5nYm945aKK/view)
+Demo part1: [BackBook](https://drive.google.com/file/d/1MRtIcDtWfD0qVylnerhWW3m8Vskz4yrH/view)
 
-![demogif](./public/assets/images/gif/backbook.gif)
+Demo part2: [BackBook](https://drive.google.com/file/d/1IiFz37BcA-Z557LCAm5w7Lejqp707eC8/view)
+
+![demogif_part1](./public/assets/images/gif/backbook.gif)
+
+![demogif_part2](./public/assets/images/gif/backbook2.gif)
 
 ## Tample of Content
 
